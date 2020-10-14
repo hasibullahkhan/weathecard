@@ -4,7 +4,7 @@ const WeatherCard = (props) => {
         <div className="card">
             <h1>Karachi</h1>
             <h3>Pak</h3>
-            <img src="" alt="" />
+            <img src="" alt="Weather Icon" />
             <h1>34 °C</h1>
             <h3>Clouds</h3>
         </div>
