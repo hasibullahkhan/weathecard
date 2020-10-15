@@ -1,12 +1,30 @@
 import React from 'react';
 import styled from '@emotion/styled';
-
+import Location from './Location'
+import Icon from './Icon';
 const WeatherCard = (props) => {
-
-    const red = 100;
+    let temp = 15;
+    let heighColor = 0;
+    let lowColor = 0;
+    let bg = null;
+    if (temp > 12) { //this is for hot weather
+        heighColor = (1 - ((temp - 12) / 28)) * 255;
+        lowColor = heighColor - 200;
+        bg = `linear-gradient(to top,
+        rgb(255,${heighColor},0),
+        rgb(255,${Math.abs(lowColor)},0)
+        )`;
+    } else if (temp <= 12) { // this is for Clod weather
+        heighColor = (1 - (temp + 20) / 32) * 255;
+        lowColor = heighColor - 200;
+        bg = `linear-gradient(to top,
+        rgb(0,${heighColor},255),
+        rgb(0,${Math.abs(lowColor)},255)
+        )`;
+    }
     const Card = styled.div`
                     margin:0 auto;
-                background: linear-gradient(to bottom,rgba(${red},200,200),lightblue);
+                background: ${bg};
                 width: 200px;
                 height: 280px;
                 display: flex;
@@ -19,14 +37,8 @@ const WeatherCard = (props) => {
     return (
         <Card className="card">
 
-            <div className="location">
-                <h1 className="city">Karachi</h1>
-                <h3 className="country">Pak</h3>
-            </div>
-
-            <img className="icon" src="./img/Cloudy.png" alt="Weather Icon" />
-
-            {/*  D:\react projects\weathercard\weathecard\public\img */}
+            <Location />
+            <Icon />
             <h1 className="temp">34 °C</h1>
             <h3 className="condition">Clouds</h3>
             <name>

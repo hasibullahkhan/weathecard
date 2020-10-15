@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather|Fira+Sans&display=swap');
-.location{
-  text-align: center;
-
-}
-
 
 .city{
   font-family: 'Merriweather',sans-serif ;
@@ -27,7 +22,4 @@
    font-family: 'Merriweather',sans-serif ;
   font-size: 1.2rem;
 
-}
-.icon{
-  width: 40%;
 }
