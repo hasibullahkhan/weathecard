@@ -1,21 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather|Fira+Sans&display=swap');
 .location{
   text-align: center;
-}
-
-.card {
-  margin:0 auto;
-  background: linear-gradient(to bottom,blue,lightblue);
-  width: 200px;
-  height: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content:space-around;
-  align-items: center;
-  border-radius: 15px;
-  color: white;
 
 }
+
+
 .city{
   font-family: 'Merriweather',sans-serif ;
   font-size: 1.6rem;
