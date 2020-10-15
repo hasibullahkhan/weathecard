@@ -1,12 +1,12 @@
 import React from 'react';
-import styled from `@emotion/styled`;
+import styled from '@emotion/styled';
 
 const WeatherCard = (props) => {
 
-    const red = 200;
+    const red = 100;
     const Card = styled.div`
                     margin:0 auto;
-                background: linear-gradient(to bottom,rgba(${read},200,200),lightblue);
+                background: linear-gradient(to bottom,rgba(${red},200,200),lightblue);
                 width: 200px;
                 height: 280px;
                 display: flex;
