@@ -3,19 +3,19 @@ import styled from '@emotion/styled';
 import Location from './Location'
 import Icon from './Icon';
 const WeatherCard = (props) => {
-    let temp = 15;
+    // let temp = 15;
     let heighColor = 0;
     let lowColor = 0;
     let bg = null;
     if (temp > 12) { //this is for hot weather
-        heighColor = (1 - ((temp - 12) / 28)) * 255;
+        heighColor = (1 - ((props.temp - 12) / 28)) * 255;
         lowColor = heighColor - 200;
         bg = `linear-gradient(to top,
         rgb(255,${heighColor},0),
         rgb(255,${Math.abs(lowColor)},0)
         )`;
-    } else if (temp <= 12) { // this is for Clod weather
-        heighColor = (1 - (temp + 20) / 32) * 255;
+    } else if (props.temp <= 12) { // this is for Clod weather
+        heighColor = (1 - (props.temp + 20) / 32) * 255;
         lowColor = heighColor - 200;
         bg = `linear-gradient(to top,
         rgb(0,${heighColor},255),
