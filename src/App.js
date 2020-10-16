@@ -4,7 +4,11 @@ import './App.css';
 
 function App() {
   return (
-    < WeatherCard />
+    <div>
+      < WeatherCard temp="-5" />
+      < WeatherCard temp="20" />
+      < WeatherCard temp="40" />
+    </div>
   );
 }
 

@@ -7,7 +7,7 @@ const WeatherCard = (props) => {
     let heighColor = 0;
     let lowColor = 0;
     let bg = null;
-    if (temp > 12) { //this is for hot weather
+    if (props.temp > 12) { //this is for hot weather
         heighColor = (1 - ((props.temp - 12) / 28)) * 255;
         lowColor = heighColor - 200;
         bg = `linear-gradient(to top,
