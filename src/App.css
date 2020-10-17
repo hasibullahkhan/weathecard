@@ -1,25 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather|Fira+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
-.city{
-  font-family: 'Merriweather',sans-serif ;
-  font-size: 1.6rem;
-}
-.country{
-  font-family: 'Fira Sans',sans-serif;
-  font-size: 1.1rem;
-}
 
 .name{
   font-family: 'Fira Sans',sans-serif;
    justify-items: baseline;
-}
-.temp{
-  font-family: 'Fira Sans',sans-serif;
-  font-size: 2rem;
-  font-weight: 200;
-}
-.condition{
-   font-family: 'Merriweather',sans-serif ;
-  font-size: 1.2rem;
-
 }

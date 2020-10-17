@@ -6,25 +6,47 @@ const Icon = (props) => {
     width: 40%;
     `;
     var icon = ''
+
+    console.log(props);
+
     switch (props.condition) {
 
         case "Clear":
-            icon = `./img/Mostly-Sunny-2x.png`
+            icon = `./img/weather-icons-master/svg/wi-day-sunny.svg`
+            // icon = `./img/Cloudy.png`;
             break;
         case "Clouds":
-            icon = `./img/Mostly Cloud-2x.png`
+            icon = `./img/weather-icons-master/svg/wi-day-cloudy.svg`
             break;
         case "Haze":
-            icon = `./img/Mostly Haze-2x.png`
+            icon = `./img/weather-icons-master/svg/wi-day-haze.svg`
             break;
         case "Hail":
-            icon = `./img/Mostly Hail-2x.svg`
+            icon = `./img/weather-icons-master/svg/wi-hail.svg`
             break;
         case "Fog":
-            icon = `./img/Mostly Fog-2x.svg`
+            icon = `./img/weather-icons-master/svg/`
             break;
         case "Tornado":
-            icon = `./img/Mostly Tornado-2x.svg`
+            icon = `./img/weather-icons-master/svg/`
+            break;
+        case "Dust":
+            icon = `./img/weather-icons-master/svg/`;
+            break;
+        case "Mist":
+            icon = `./img/weather-icons-master/svg/`;
+            break;
+        case "Snow":
+            icon = `./img/weather-icons-master/svg/`;
+            break;
+        case "Rain":
+            icon = `./img/weather-icons-master/svg/`;
+            break;
+        case "Drizzle":
+            icon = `./img/weather-icons-master/svg/`;
+            break;
+        case "Thunderstorm":
+            icon = `./img/weather-icons-master/svg/`;
             break;
         default:
             break;
