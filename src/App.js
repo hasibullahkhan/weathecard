@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      < WeatherCard />
+      < WeatherCard temp="36" imagecondition="Hail" city="Karachi" country="Pak" creatdby="Hasibullah khan" email="hasibpak@gmail.com" />
     </div>
   );
 }

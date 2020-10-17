@@ -51,8 +51,7 @@ const Icon = ({ imagecondition }) => {
             break;
 
     }
-    console.log("imagecondition", imagecondition)
-    console.log("wetherimage", wetherimage)
+
     return (
         <Icon src={wetherimage} alt="Weather Icon" />
     )

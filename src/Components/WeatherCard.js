@@ -3,7 +3,8 @@ import styled from '@emotion/styled';
 import Location from './Location'
 import Icon from './Icon';
 import WeatherTemprature from './WeatherTemp'
-const WeatherCard = (props) => {
+import Designby from './Designby';
+const WeatherCard = ({ temp, imagecondition, city, country, creatdby, email }) => {
 
     const red = 100;
     const Card = styled.div`
@@ -21,14 +22,10 @@ const WeatherCard = (props) => {
     return (
         <Card>
 
-            <Location city="Karachi" country="Pak" />
-            <Icon imagecondition="Fog" />
-            <WeatherTemprature temp="15" imagecondition="Fog" />
-            <name>
-                <h6 className="name">-------------------------------------------------</h6>
-                <h6 className="name">Design by:Hasibullah khan</h6>
-                <h6 className="name">Email    :hasibpak@gmail.com</h6>
-            </name>
+            <Location city={city} country={country} />
+            <Icon imagecondition={imagecondition} />
+            <WeatherTemprature temp={temp} imagecondition={imagecondition} />
+            <Designby creatdby={creatdby} email={email} />
         </Card>
 
     );
