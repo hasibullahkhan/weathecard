@@ -1,16 +1,16 @@
-import React from "react"
-import styled from '@emotion/styled';
+import React from "react";
+
 
 const Designby = ({ creatdby, email }) => {
+
     return (
 
-        <name>
-            <h6 className="name">-------------------------------------------------</h6>
-            <h6 className="name">Design by :{creatdby}</h6>
-            <h6 className="name">Email    :{email}</h6>
-        </name>
+        <div>
+            <h6 className="txtdeco">-------------------------------------------------</h6>
+            <h6 className="txtdeco">Design by :{creatdby}</h6>
+            <h6 className="txtdeco">Email    :{email}</h6>
+        </div>
 
-    );
+    )
 }
-
 export default Designby;

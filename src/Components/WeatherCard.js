@@ -6,7 +6,6 @@ import WeatherTemprature from './WeatherTemp'
 import Designby from './Designby';
 const WeatherCard = ({ temp, imagecondition, city, country, creatdby, email }) => {
 
-    // let temp = 15;
     let heighColor = 0;
     let lowColor = 0;
     let bg = null;
