@@ -27,25 +27,25 @@ const Icon = ({ imagecondition }) => {
             wetherimage = `./img/weather-icons-master/svg/wi-day-fog.svg`
             break;
         case "Tornado":
-            wetherimage = `./img/weather-icons-master/svg/`
+            wetherimage = `./img/weather-icons-master/svg/wi-tornado.svg`
             break;
         case "Dust":
-            wetherimage = `./img/weather-icons-master/svg/`;
+            wetherimage = `./img/weather-icons-master/svg/wi-dust.svg`;
             break;
         case "Mist":
-            wetherimage = `./img/weather-icons-master/svg/`;
+            wetherimage = `./img/weather-icons-master/svg/wi-humidity.svg`;
             break;
         case "Snow":
-            wetherimage = `./img/weather-icons-master/svg/`;
+            wetherimage = `./img/weather-icons-master/svg/wi-day-snow.svg`;
             break;
         case "Rain":
-            wetherimage = `./img/weather-icons-master/svg/`;
+            wetherimage = `./img/weather-icons-master/svg/wi-rain.svg`;
             break;
         case "Drizzle":
-            wetherimage = `./img/weather-icons-master/svg/`;
+            wetherimage = `./img/weather-icons-master/svg/wi-raindrop.svg`;
             break;
         case "Thunderstorm":
-            wetherimage = `./img/weather-icons-master/svg/`;
+            wetherimage = `./img/weather-icons-master/svg/wi-day-thunderstorm.svg`;
             break;
         default:
             break;
