@@ -3,6 +3,8 @@ import WeatherCard from './Components/WeatherCard'
 import './App.css';
 
 function App() {
+  const q = "Lahore"
+
   return (
     <div>
       < WeatherCard temp="3" imagecondition="Rain" city="Karachi" country="Pak" creatdby="Hasibullah khan" email="hasibpak@gmail.com" />
