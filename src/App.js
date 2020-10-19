@@ -1,9 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import WeatherCard from './Components/WeatherCard'
 import './App.css';
 
 function App() {
+  const [city, setCity] = useState("");
+  const [country, setCountry] = useSate("");
+  const [weatherCond, setWeatherCond] = useSate("");
+  const [weatherTemp, setWeatherTemp] = useSate("");
+
   const q = "Lahore"
+  const data = async => {
+    const apiRes = await fetch(
+      `http://api.openweathermap.org/data/2.5/weather?q=${q}&units=metric&APPID=34b5f955b8fa96d8a786a271305fea87`
+
+    )
+    const resJOSN = await apiRes.json()
+    return resJOSN;
+  }
+  const handleSearch = e => {
+    e.PreventDefault();
+    data().then(res => {
+      console.log("feels_like " + res.main.feels_like)
+      console.log("the temp is " + res.main.temp)
+    })
+  }
 
   return (
     <div>
