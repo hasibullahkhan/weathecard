@@ -4,12 +4,12 @@ import './App.css';
 
 function App() {
   const [city, setCity] = useState("");
-  const [country, setCountry] = useSate("");
-  const [weatherCond, setWeatherCond] = useSate("");
-  const [weatherTemp, setWeatherTemp] = useSate("");
+  const [country, setCountry] = useState("");
+  const [weatherCond, setWeatherCond] = useState("");
+  const [weatherTemp, setWeatherTemp] = useState("");
 
   const q = "Lahore"
-  const data = async => {
+  const data = async () => {
     const apiRes = await fetch(
       `http://api.openweathermap.org/data/2.5/weather?q=${q}&units=metric&APPID=34b5f955b8fa96d8a786a271305fea87`
 
